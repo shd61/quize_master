@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid rgba(78, 137, 174, 0.25);
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 0.5rem;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(78, 137, 174, 0.4);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+  background-color: #f5f7fa;
+}
+
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  background-color: #4E89AE;
+  color: white;
+  font-weight: 500;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+  color: #2d2d2d;
+}
+
+.correct {
+  background-color: #3CB371 ;
+  color: white;
+}
+
+.incorrect {
+  background-color: #E05252 ;
+  color: white;
+}
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+  color: #4E89AE;
+  font-weight: 600;
+}
+
+.hud-main-text {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #555;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid #4E89AE;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: #eaf2f8;
+}
+
+#progressBarFull {
+  height: 100%;
+  background-color: #4E89AE;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+}
+
+#loader {
+  border: 1.6rem solid white;
+  border-radius: 50%;
+  border-top: 1.6rem solid #4E89AE;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
